@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WeDoo.Views.home">
+    <NavigationPage.TitleView>
+
+        <StackLayout Orientation="Horizontal" >
+           
+            <StackLayout>
+                <SearchBar  Placeholder="Search Items"
+                                            PlaceholderColor="Gray" 
+                                            TextColor="Black"
+                                            x:Name="srbSearchPeople"
+                                            BackgroundColor="#fff"
+                                            HeightRequest="35" WidthRequest="280"/>
+            </StackLayout>
+            <Image Source="top1.png"  HeightRequest="20" WidthRequest="30" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid Padding="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="140"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            <Frame  BackgroundColor="#ffc1075e" Grid.Row="0" Grid.Column="0" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="one.png" Margin="20" />
+                    <Label Text="Bakery" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame  BackgroundColor="#D81159" Grid.Row="0" Grid.Column="1" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="two.png" Margin="15"/>
+                    <Label Text="Vegetable &amp; Fruits"  HorizontalTextAlignment="Center" FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame  BackgroundColor="#222247" Grid.Row="0" Grid.Column="2" HasShadow="true" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="three.png" Margin="20" />
+                    <Label Text="Egg &amp; Diary" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+
+
+            <Frame  BackgroundColor="#D81159" Grid.Row="1" Grid.Column="0" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="four.png" Margin="20" />
+                    <Label Text="Beverages" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame  BackgroundColor="#8D5A97" Grid.Row="1" Grid.Column="1" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="five.png" Margin="20" />
+                    <Label Text="Meat" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame  BackgroundColor="#001021" Grid.Row="1" Grid.Column="2" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="six.png" Margin="20" />
+                    <Label Text="Frozen" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame  BackgroundColor="#222247" Grid.Row="2" Grid.Column="0" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="seven.png" Margin="20" />
+                    <Label Text="Canned Item" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame  BackgroundColor="#1E3F20" Grid.Row="2" Grid.Column="1" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="eight.png" Margin="15" />
+                    <Label Text="Floor &amp;
+                    masala" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+
+            <Frame  BackgroundColor="#8D5A97" Grid.Row="2" Grid.Column="2" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="nine.png" Margin="20" />
+                    <Label Text="Sweets" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame  BackgroundColor="#001021" Grid.Row="3" Grid.Column="0" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="twelve.png" Margin="20" />
+                    <Label Text="Baby Products" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame  BackgroundColor="#8D5A97" Grid.Row="3" Grid.Column="1" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="eleven.png" Margin="20" />
+                    <Label Text="Cosmetics" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+            <Frame  BackgroundColor="#ffc1075e" Grid.Row="3" Grid.Column="2" HasShadow="False" Padding="0" CornerRadius="0">
+                <StackLayout>
+                    <Image Source="thirteen.png" Margin="20" />
+                    <Label Text="Offers" VerticalTextAlignment="End" HorizontalTextAlignment="Center"  FontSize="17" TextColor="white"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="onFrameCitizenReporterTapped1" NumberOfTapsRequired="1" />
+                </Frame.GestureRecognizers>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
